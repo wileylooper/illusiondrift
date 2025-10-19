@@ -1,6 +1,6 @@
 #### IllusionDrift64
 
-IllusionDrift64 provides enhanced parallelism, period, speed and statistical test results as an ideal alternative to Xoroshiro128+, Xorshift128 and Xorshift128+.
+IllusionDrift64 provides enhanced parallelism, period, speed and statistical test results as an ideal alternative to Xoroshiro128+, Xorshift128, Xorshift128+ and XorshiftR128+.
 
 It has a period of at least 2¹²⁸.
 
