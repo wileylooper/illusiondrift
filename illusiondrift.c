@@ -7,6 +7,13 @@ struct illusionDriftState64 {
   uint64_t d;
 };
 
+struct illusionDriftState32 {
+  uint32_t a;
+  uint32_t b;
+  uint32_t c;
+  uint32_t d;
+};
+
 uint64_t illusionDrift64(struct illusionDriftState64 *s) {
   uint64_t mix = s->a ^ s->b;
 
@@ -14,5 +21,15 @@ uint64_t illusionDrift64(struct illusionDriftState64 *s) {
   s->b = s->c;
   s->c = s->d;
   s->d = ((s->d << 21) | (s->d >> 43)) + mix;
+  return mix;
+}
+
+uint32_t illusionDrift32(struct illusionDriftState32 *s) {
+  uint32_t mix = s->a ^ s->b;
+
+  s->a += 111111111;
+  s->b = s->c;
+  s->c = s->d;
+  s->d = ((s->d << 9) | (s->d >> 23)) + mix;
   return mix;
 }
