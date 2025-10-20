@@ -1,0 +1,100 @@
+Each state integer is seeded with 0.
+It passes up to 128GB while each of its comparisons from the README.md file fail at less than 1GB.
+
+
+
+RNG_test using PractRand version 0.95
+test set = core, folding = standard (64 bit)
+
+length= 1 kilobyte (2^10 bytes)
+  no anomalies in 6 test result(s)
+
+length= 2 kilobytes (2^11 bytes)
+  no anomalies in 8 test result(s)
+
+length= 4 kilobytes (2^12 bytes)
+  no anomalies in 18 test result(s)
+
+length= 8 kilobytes (2^13 bytes)
+  no anomalies in 21 test result(s)
+
+length= 16 kilobytes (2^14 bytes)
+  no anomalies in 32 test result(s)
+
+length= 32 kilobytes (2^15 bytes)
+  no anomalies in 36 test result(s)
+
+length= 64 kilobytes (2^16 bytes)
+  no anomalies in 52 test result(s)
+
+length= 128 kilobytes (2^17 bytes)
+  no anomalies in 60 test result(s)
+
+length= 256 kilobytes (2^18 bytes)
+  no anomalies in 73 test result(s)
+
+length= 512 kilobytes (2^19 bytes)
+  no anomalies in 83 test result(s)
+
+length= 1 megabyte (2^20 bytes)
+  no anomalies in 95 test result(s)
+
+length= 2 megabytes (2^21 bytes)
+  no anomalies in 107 test result(s)
+
+length= 4 megabytes (2^22 bytes)
+  no anomalies in 122 test result(s)
+
+length= 8 megabytes (2^23 bytes)
+  no anomalies in 136 test result(s)
+
+length= 16 megabytes (2^24 bytes)
+  no anomalies in 150 test result(s)
+
+length= 32 megabytes (2^25 bytes)
+  no anomalies in 165 test result(s)
+
+length= 64 megabytes (2^26 bytes)
+  no anomalies in 180 test result(s)
+
+length= 128 megabytes (2^27 bytes)
+  no anomalies in 196 test result(s)
+
+length= 256 megabytes (2^28 bytes)
+  no anomalies in 213 test result(s)
+
+length= 512 megabytes (2^29 bytes)
+  no anomalies in 229 test result(s)
+
+length= 1 gigabyte (2^30 bytes)
+  no anomalies in 246 test result(s)
+
+length= 2 gigabytes (2^31 bytes)
+  no anomalies in 263 test result(s)
+
+length= 4 gigabytes (2^32 bytes)
+  Test Name                         Raw       Processed     Evaluation
+  Gap-16:B                          R=  +4.5  p =  9.0e-4   unusual          
+  ...and 278 test result(s) without anomalies
+
+length= 8 gigabytes (2^33 bytes)
+  no anomalies in 295 test result(s)
+
+length= 16 gigabytes (2^34 bytes)
+  no anomalies in 311 test result(s)
+
+length= 32 gigabytes (2^35 bytes)
+  Test Name                         Raw       Processed     Evaluation
+  [Low4/64]DC6-9x1Bytes-1           R=  +6.5  p =  1.4e-3   unusual          
+  ...and 324 test result(s) without anomalies
+
+length= 64 gigabytes (2^36 bytes)
+  Test Name                         Raw       Processed     Evaluation
+  [Low4/64]DC6-9x1Bytes-1           R= +10.1  p =  3.6e-5   suspicious       
+  ...and 339 test result(s) without anomalies
+
+length= 128 gigabytes (2^37 bytes)
+  Test Name                         Raw       Processed     Evaluation
+  BCFN(2+0,13-0,T)                  R=  +9.8  p =  9.0e-5   mildly suspicious
+  [Low4/64]DC6-9x1Bytes-1           R= +17.1  p =  2.4e-9    VERY SUSPICIOUS 
+  ...and 353 test result(s) without anomalies
